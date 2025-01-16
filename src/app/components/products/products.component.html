@@ -1,0 +1,9 @@
+<section class="container">
+<h1>soy products</h1>
+<figure *ngFor="let products of product">
+<img [src]="products.images[0]" alt={{products.title}}>
+<figcaption>
+  {{products.title}} - {{products.price}}
+</figcaption>
+</figure>
+</section>
